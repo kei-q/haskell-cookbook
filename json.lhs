@@ -15,4 +15,4 @@ tags: library, aeson, json
 > instance ToJSON Coord
 
 > coord = Coord 1 2
-> test = encode coord
+> test_encode = encode coord
