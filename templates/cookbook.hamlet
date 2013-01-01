@@ -1,0 +1,8 @@
+<article>
+  <header>
+    <h1>
+      <a href="#{url}">#{title}
+  <p.description>#{description}
+  <span.tags>#{tags}
+  <footer>
+    <span.date>#{date}

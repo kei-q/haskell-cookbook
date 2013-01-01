@@ -1,0 +1,5 @@
+<div#index>
+  <h2>recent posts
+  #{posts}
+  <h2>tags
+  #{tags}
