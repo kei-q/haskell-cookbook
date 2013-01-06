@@ -50,13 +50,13 @@ publish pattern router compiler = match pattern $ do
     route router
     compile compiler
 
--- yabai
 defaultTemplate = slimTemplate "templates/default.slim"
 
 slimTemplate file ctx item = do
     tpl <- readSlimToTemplate file
     applyTemplate tpl ctx item
 
+-- yabai
 readSlimToTemplate file = do
     contents <- unsafeCompiler $ readFile file :: Compiler String
     readTemplate <$> unixFilter "slimrb" [] contents
