@@ -4,7 +4,7 @@
 		{
 			"path": "/Users/keqh/projects/haskell-cookbook",
       "folder_exclude_patterns": [
-        "_site", "_cache", ".sass-cache"
+        "_site", "_cache", ".sass-cache", "old"
       ],
       "file_exclude_patterns": [
         "scssc", "html", ".git"

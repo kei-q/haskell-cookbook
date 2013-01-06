@@ -4,5 +4,5 @@
 guard 'livereload' do
   # watch("index.html")
   # watch(%r{recipes/**$})
-  watch(%r{_site/.+\.html$})
+  watch(%r{_site/.+$})
 end

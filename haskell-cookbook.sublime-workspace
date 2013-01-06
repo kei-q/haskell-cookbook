@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"default",
+				"defaultContext"
+			],
+			[
+				"renderTag",
+				"renderTagList"
+			],
+			[
+				"slim",
+				"slimTemplate"
+			],
+			[
+				"defaultCon",
+				"defaultContext"
+			],
+			[
+				"relativ",
+				"relativizeUrls"
+			],
+			[
+				"loadA",
+				"loadAndApplyTemplate"
+			],
+			[
+				"reci",
+				"recipesPattern"
+			],
+			[
 				"SE_",
 				"SE_GACHA_EFFECT"
 			],
@@ -668,12 +700,36 @@
 	},
 	"file_history":
 	[
-		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-04.lhs",
+		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-06-1.lhs",
 		"/Users/keqh/projects/haskell-cookbook/cookbook.sh",
-		"/Users/keqh/projects/haskell-cookbook/haskell-cookbook.sublime-project",
 		"/Users/keqh/projects/haskell-cookbook/preview.sh",
-		"/Users/keqh/projects/haskell-cookbook/templates/default.hamlet",
+		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-06.lhs",
+		"/Users/keqh/projects/haskell-cookbook/css/default.css",
+		"/Users/keqh/projects/haskell-cookbook/templates/postitem.slim",
+		"/Users/keqh/projects/haskell-cookbook/site.hs",
+		"/Users/keqh/projects/haskell-cookbook/index.html",
+		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-05-1.lhs",
+		"/Users/keqh/projects/haskell-cookbook/templates/default.slim",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/css/syntax.css",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/css/default.css",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/templates/recipe.slim",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/recipes/2013-01-05-1.lhs",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/index.html",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/recipes/2013-01-03.lhs",
+		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-04.lhs",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/site.hs",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/templates/default.slim",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/templates/default.hamlet",
 		"/Users/keqh/projects/haskell-cookbook/template.lhs",
+		"/Users/keqh/projects/haskell-cookbook/Main3.hs",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/recipes/2013-01-01.md",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/templates/posts.slim",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/templates/postitem.slim",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/templates/default.html",
+		"/Users/keqh/projects/haskell-cookbook/templates/default.hamlet",
+		"/Users/keqh/projects/haskell-cookbook/hakyll4/contact.markdown",
+		"/Users/keqh/projects/haskell-cookbook/Main.hs",
+		"/Users/keqh/projects/haskell-cookbook/haskell-cookbook.sublime-project",
 		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-03.lhs",
 		"/Users/keqh/projects/haskell-cookbook/Procfile",
 		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-05.lhs",
@@ -685,7 +741,6 @@
 		"/Users/keqh/projects/haskell-cookbook/.gitignore",
 		"/Users/keqh/projects/haskell-cookbook/recipes/2013-01-01-1.lhs",
 		"/Users/keqh/projects/haskell-cookbook/templates/index.hamlet",
-		"/Users/keqh/projects/haskell-cookbook/index.html",
 		"/Users/keqh/projects/haskell-cookbook/import.lhs",
 		"/Users/keqh/inbox/epub-haskell-advent-calendar/data/10.html.txt",
 		"/Users/keqh/inbox/epub-haskell-advent-calendar/data/11.html.txt",
@@ -772,30 +827,7 @@
 		"/Users/keqh/works/luna/luna/client/views/scene/quest/cleared.lua",
 		"/Users/keqh/works/luna/luna/client/views/scene/start.lua",
 		"/Users/keqh/works/luna/luna/client/views/scene/card/deck.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/card/deck_tutorial.lua",
-		"/Users/keqh/works/luna/luna/server/app/models/user_area.rb",
-		"/Users/keqh/works/luna/luna/client/views/scene/my/status.lua",
-		"/Users/keqh/works/luna/luna/client/models/user.lua",
-		"/Users/keqh/works/luna/luna/server/app/models/notice.rb",
-		"/Users/keqh/works/luna/luna/client/views/layout/default.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/gacha/result.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/card/_show_detail.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/card/_show_simple_status.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/card/deck_single_edit.lua",
-		"/Users/keqh/works/luna/luna/client/lib/settings.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/scenario/read.lua",
-		"/Users/keqh/Library/Application Support/Corona Simulator/client-52940CB94230C22F2388071809F2DD38/Documents/settings.ice",
-		"/Users/keqh/works/luna/luna/client/kahlua/helper/corona_timeline_factory.lua",
-		"/Users/keqh/works/luna/luna/server/db/seeds/scenarios.rb",
-		"/Users/keqh/works/luna/luna/scenario/0001_1-1.scenario",
-		"/Users/keqh/works/luna/luna/client/views/scene/card/_new_text_for_card_parameter.lua",
-		"/Users/keqh/works/luna/luna/server/app/controllers/story_controller.rb",
-		"/Users/keqh/works/luna/luna/client/views/scene/story/battle_confirm.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/story/result.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/story/index.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/guild/battle_confirm.lua",
-		"/Users/keqh/works/luna/luna/client/models/story.lua",
-		"/Users/keqh/works/luna/luna/client/views/scene/card/power_up_movie.lua"
+		"/Users/keqh/works/luna/luna/client/views/scene/card/deck_tutorial.lua"
 	],
 	"find":
 	{
@@ -819,6 +851,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"default",
 			"atomically",
 			"import",
 			"SE_GACHA_EFFECT",
@@ -945,8 +978,7 @@
 			"scene",
 			"nullScene",
 			"scene_base",
-			"currentLayout",
-			"_view"
+			"currentLayout"
 		],
 		"highlight": true,
 		"in_selection": true,
@@ -1020,7 +1052,7 @@
 	},
 	"output.haskell_error_checker":
 	{
-		"height": 57.0
+		"height": 94.0
 	},
 	"replace":
 	{
@@ -1033,43 +1065,123 @@
 		"selected_items":
 		[
 			[
-				"coo",
-				"cookbook.sh"
-			],
-			[
-				"co",
-				"haskell-cookbook.sublime-project"
-			],
-			[
 				"pre",
 				"preview.sh"
 			],
 			[
-				"temp",
-				"template.lhs"
+				"coo",
+				"cookbook.sh"
 			],
 			[
-				"ham",
-				"templates/default.hamlet"
+				"06",
+				"recipes/2013-01-06-1.lhs"
 			],
 			[
-				"hamlet",
-				"templates/default.hamlet"
+				"inde",
+				"index.html"
+			],
+			[
+				"de",
+				"templates/default.slim"
+			],
+			[
+				"site",
+				"site.hs"
+			],
+			[
+				"05",
+				"recipes/2013-01-05-1.lhs"
+			],
+			[
+				"postite",
+				"templates/postitem.slim"
+			],
+			[
+				"",
+				"css/default.css"
+			],
+			[
+				"syn",
+				"hakyll4/css/syntax.css"
+			],
+			[
+				"css",
+				"hakyll4/css/default.css"
+			],
+			[
+				"slim",
+				"hakyll4/templates/recipe.slim"
+			],
+			[
+				"postslim",
+				"hakyll4/templates/posts.slim"
 			],
 			[
 				"03",
-				"recipes/2013-01-03.lhs"
+				"hakyll4/recipes/2013-01-03.lhs"
+			],
+			[
+				"md",
+				"hakyll4/recipes/2013-01-01.md"
+			],
+			[
+				"post.sl",
+				"hakyll4/templates/postitem.slim"
+			],
+			[
+				"post",
+				"hakyll4/templates/posts.slim"
 			],
 			[
 				"04",
 				"recipes/2013-01-04.lhs"
 			],
 			[
-				"sh",
-				"cookbook.sh"
+				"postitem",
+				"hakyll4/templates/postitem.slim"
 			],
 			[
-				"",
+				"reci",
+				"hakyll4/templates/recipe.slim"
+			],
+			[
+				"hamlet",
+				"hakyll4/templates/default.hamlet"
+			],
+			[
+				"haml",
+				"templates/default.hamlet"
+			],
+			[
+				"index",
+				"hakyll4/index.html"
+			],
+			[
+				"hakyll4",
+				"hakyll4/templates/default.html"
+			],
+			[
+				"main",
+				"Main3.hs"
+			],
+			[
+				"temp",
+				"template.lhs"
+			],
+			[
+				"re",
+				"recipes/2013-01-04.lhs"
+			],
+			[
+				"co",
+				"haskell-cookbook.sublime-project"
+			],
+			[
+				"ham",
+				"templates/default.hamlet"
+			],
+			[
+				"sh",
 				"cookbook.sh"
 			],
 			[
@@ -1111,14 +1223,6 @@
 			[
 				"template",
 				"templates/default.hamlet"
-			],
-			[
-				"index",
-				"templates/index.hamlet"
-			],
-			[
-				"inde",
-				"index.html"
 			],
 			[
 				"txt",
@@ -1195,10 +1299,6 @@
 			[
 				"app",
 				"client/app.lua"
-			],
-			[
-				"main",
-				"client/main.lua"
 			],
 			[
 				"lo",
@@ -1475,74 +1575,6 @@
 			[
 				"prese",
 				"server/app/models/present.rb"
-			],
-			[
-				"userstory",
-				"server/app/models/user_story.rb"
-			],
-			[
-				"focu",
-				"client/views/scene/card/card_focusable_select_base.lua"
-			],
-			[
-				"cardsing",
-				"client/views/scene/card/deck_single_edit.lua"
-			],
-			[
-				"stocon",
-				"server/app/controllers/story_controller.rb"
-			],
-			[
-				"viw",
-				"client/views/view.lua"
-			],
-			[
-				"deckse",
-				"client/views/scene/common/deck_select.lua"
-			],
-			[
-				"commode",
-				"client/views/scene/common/deck_select.lua"
-			],
-			[
-				"deck_sele",
-				"client/views/scene/quest/deck_select.lua"
-			],
-			[
-				"storybattlelu",
-				"client/views/scene/story/battle.lua"
-			],
-			[
-				"scenarea",
-				"client/views/scene/scenario/read.lua"
-			],
-			[
-				"time",
-				"client/kahlua/helper/corona_timeline_factory.lua"
-			],
-			[
-				"coronau",
-				"client/kahlua/corona_utils.lua"
-			],
-			[
-				"u",
-				"client/kahlua/utils.lua"
-			],
-			[
-				"gamain",
-				"client/views/scene/gacha/main.lua"
-			],
-			[
-				"default",
-				"client/views/layout/default.lua"
-			],
-			[
-				"lay",
-				"client/kahlua/views/layout_base.lua"
-			],
-			[
-				"layout",
-				"client/views/layout_base.lua"
 			]
 		],
 		"width": 0.0
