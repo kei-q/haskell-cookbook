@@ -5,6 +5,10 @@ body {
     width: 600px;
 }
 
+#notice {
+    color: red;
+}
+
 div#logo a {
     color: black;
     float: left;

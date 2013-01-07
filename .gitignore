@@ -9,3 +9,4 @@ cabal-dev
 _cache/
 _site/
 old/
+haskell-cookbook.sublime-workspace
