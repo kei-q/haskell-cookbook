@@ -1,8 +1,8 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import           Control.Applicative
 import           Data.Monoid
 import           Hakyll
+import           HakyllHelper
 
 
 --------------------------------------------------------------------------------
@@ -15,9 +15,7 @@ config = defaultConfiguration
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyllWith config $ do
-    match "templates/*" $ compile templateCompiler
-    publish "images/*" idRoute copyFileCompiler
-    publish "css/*" idRoute compressCssCompiler
+    defaultRules
 
     let recipesPattern = "recipes/*"
     tags <- buildTags recipesPattern (fromCapture "tags/*.html")
@@ -46,20 +44,8 @@ main = hakyllWith config $ do
 
 
 --------------------------------------------------------------------------------
-publish pattern router compiler = match pattern $ do
-    route router
-    compile compiler
-
 defaultTemplate = slimTemplate "templates/default.slim"
 
-slimTemplate file ctx item = do
-    tpl <- readSlimToTemplate file
-    applyTemplate tpl ctx item
-
--- yabai
-readSlimToTemplate file = do
-    contents <- unsafeCompiler $ readFile file :: Compiler String
-    readTemplate <$> unixFilter "slimrb" [] contents
 
 --------------------------------------------------------------------------------
 tagsCtx title list = mconcat
