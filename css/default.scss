@@ -3,18 +3,23 @@
     padding: 0;
 }
 
-p {
-    margin: 1em 0;
+a {
+    text-decoration: none;
 }
 
 body {
     color: black;
     font-size: 16px;
+    background-image: url(/images/haskell-logo.png);
+    background-size: 480px auto;
+    background-repeat: no-repeat;
+    background-position: 10px bottom;
+    background-attachment: fixed;
 }
 
 #page_header {
     background-color: #305070;
-    padding: .3em;
+    padding: .3em 1em;
     a {
         color: white;
         text-decoration: none;
@@ -24,11 +29,15 @@ body {
 #notice {
     color: red;
     text-align: center;
+    margin: 1em 0;
 }
 
 #main {
     margin: 0 auto 0 auto;
-    width: 600px;
+    width: 660px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 1em;
+    border-radius: 6px;
 }
 
 #tags {
@@ -41,4 +50,31 @@ body {
     color: white;
     padding: .1em .4em;
     text-decoration: none;
+}
+
+#post {
+    p {
+        margin: 1em 0;
+    }
+}
+
+.postitem {
+    margin-bottom: 1.4em;
+
+    header {
+        h1 {
+            float: left;
+            font-size: 125%;
+        }
+        .date {
+            float: right;
+            font-size: 80%;
+            color: #666;
+        }
+    }
+
+    .description {
+        clear: both;
+        margin-left: 1.5em;
+    }
 }
