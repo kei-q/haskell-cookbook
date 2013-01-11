@@ -1,5 +1,5 @@
 ---
-title: 何が嬉しいかここに書く
+title: hackageに登録されている関数検索する
 description: hayooというサービスを使って関数を検索します。
 tags: tool
 ---
