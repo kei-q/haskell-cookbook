@@ -33,7 +33,7 @@ main = hakyllWith config $ do
         let title = "Posts tagged : " ++ tag
         route idRoute
         compile $ do
-            list <- postList tags pattern recentFirst
+            list <- postList tags pattern recentFirst'
             makeItem ""
                 >>= slimTemplate "templates/posts.slim" (tagsCtx title list)
                 >>= defaultTemplate defaultContext
