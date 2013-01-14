@@ -2,16 +2,17 @@
 title: 分割してできた文字列のリストを連結する
 description: intercalateを使って文字列を連結します。
 tags: string, list
+date: 2013-01-13
 ---
 
 > module R20130113 where
 > import Data.List (intercalate)
 
- #2013-01-12-1.lhs の記事では文字列を分割しましたが、
- 逆に分割した文字列をつなげるには`intercalate :: [a] -> [[a]] -> [a]`が使えます。
- この関数を使用するには`Data.List`をimportする必要があります。
+12.lhs の記事では文字列を分割しましたが、
+逆に分割した文字列をつなげるには`intercalate :: [a] -> [[a]] -> [a]`が使えます。
+この関数を使用するには`Data.List`をimportする必要があります。
 
- 例えば、','区切りで分割した文字列をまたつなぎ合わせるには次のようにします。
+例えば、','区切りで分割した文字列をまたつなぎ合わせるには次のようにします。
 
 > -- |
 > -- >>> intercalate "," ["hoge", "fuga"]

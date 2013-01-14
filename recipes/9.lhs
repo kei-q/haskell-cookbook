@@ -2,6 +2,7 @@
 title: 標準ライブラリにある関数を見つけたい
 description: hoogleを使って関数を調べます
 tags: tool
+date: 2013-01-09
 ---
 
 標準ライブラリは [Haskell Hierarchical Libraries](http://www.haskell.org/ghc/docs/latest/html/libraries/) で探すことができます。

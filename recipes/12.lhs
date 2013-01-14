@@ -2,6 +2,7 @@
 title: 文字列を分割する
 description: Data.List.Splitを使って分割します
 tags: string, list, standard library
+date: 2013-01-12
 ---
 
 > module R20130112 where

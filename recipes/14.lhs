@@ -2,6 +2,7 @@
 title: 多倍長整数を扱う
 description: IntとIntegerの違いについて
 tags: prelude,
+date: 2013-01-14
 ---
 
 Haskellでは標準で多倍長整数を扱うために`Integer`という型が用意されています。

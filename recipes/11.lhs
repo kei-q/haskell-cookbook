@@ -2,9 +2,10 @@
 title: hackageに登録されている関数検索する
 description: hayooというサービスを使って関数を検索します。
 tags: tool
+date: 2013-01-11
 ---
 
-2013-01-11.lhs(TODO:別記事へのリンク)では標準ライブラリを検索するhoogleを紹介しました。
+11.lhsでは標準ライブラリを検索するhoogleを紹介しました。
 [Hayoo! - Haskell API Search](http://holumbus.fh-wedel.de/hayoo/hayoo.html)はhackageに登録してある関数を全て探すことができます。
 ただし、hackageでドキュメントが生成されているライブラリに限ります。
 また、hackageのようなCLIは用意していないようです。

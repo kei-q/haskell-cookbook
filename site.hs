@@ -4,6 +4,15 @@ import           Data.Monoid
 import           Hakyll
 import           HakyllHelper
 
+import Data.List (sortBy, intercalate)
+import Data.Ord (comparing)
+import qualified Data.Map as M
+import Control.Monad (msum)
+import           Data.Time.Format              (formatTime, parseTime)
+import           System.FilePath               (takeBaseName, takeFileName)
+import           System.Locale                 (TimeLocale, defaultTimeLocale)
+import Numeric (readDec)
+
 
 --------------------------------------------------------------------------------
 -- configuration
@@ -36,7 +45,7 @@ main = hakyllWith config $ do
         >>= relativizeUrls
 
     publish "index.html" idRoute $ do
-        let indexCtx = mconcat [ field "posts" (\_ -> postList tags recipesPattern recentFirst) , field "tags" (\_ -> renderTagList tags) , defaultContext ]
+        let indexCtx = mconcat [ field "posts" (\_ -> postList tags recipesPattern recentFirst') , field "tags" (\_ -> renderTagList tags) , defaultContext ]
         getResourceBody
             >>= applyAsTemplate indexCtx
             >>= defaultTemplate (postCtx tags)
@@ -69,3 +78,15 @@ postList tags pattern preprocess = do
     posts <- preprocess <$> loadAll pattern
     tpl <- readSlimToTemplate "templates/postitem.slim"
     applyTemplateList tpl (postCtx tags) posts
+
+
+--------------------------------------------------------------------------------
+recentFirst' = reverse . (sortBy $ comparing aux)
+  where
+    readInt s
+        | null a = 0
+        | otherwise = fst $ head a
+      where
+        a = readDec s
+    aux = readInt . takeBaseName . toFilePath . itemIdentifier
+

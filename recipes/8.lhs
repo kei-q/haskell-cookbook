@@ -2,6 +2,7 @@
 title: 条件分岐する
 description: ifを使って条件に応じて分岐します。
 tags: basics, control sequence
+date: 2013-01-08
 ---
 
 > module R20130108 where

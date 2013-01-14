@@ -2,6 +2,7 @@
 title: 文字列を数値に変換する
 description: readを使って文字列を数値表現に変換します
 tags: basics, prelude
+date: 2013-01-05
 ---
 
 文字列を数値に変換する一番簡単な方法は`read`です。

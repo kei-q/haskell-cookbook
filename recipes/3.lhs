@@ -2,6 +2,7 @@
 title: 文字列をファイルに書き込む
 description: writeFileを使って指定したファイルに文字列を保存します
 tags: basics, file
+date: 2013-01-03
 ---
 
 文字列をファイルに書き込むには`writeFile`を使います。

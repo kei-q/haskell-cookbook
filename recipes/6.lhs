@@ -2,6 +2,7 @@
 title: 文字列を連結する
 description: (++)を使って文字列を連結します
 tags: string, prelude, list
+date: 2013-01-06
 ---
 
 > -- これがないとdoctestが使えない

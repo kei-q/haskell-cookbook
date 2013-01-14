@@ -2,6 +2,7 @@
 title: ghciで型を確認する
 description: none
 tags: basics, ghci
+date: 2013-01-01
 ---
 
 ghciで型を確認するには、`:t`を使います。

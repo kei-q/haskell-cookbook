@@ -2,6 +2,7 @@
 title: ファイルの中身を一度に読み込む
 description: readFileを使ってファイルを読み込みます
 tags: basics, file
+date: 2013-01-02
 ---
 
 ファイルの中身を読み込むには`readFile`を使います。

@@ -2,6 +2,7 @@
 title: 標準入力から文字列を読み込む
 description: getChar、getLineを使って読み込む
 tags: basics, prelude, stdin
+date: 2013-01-04
 ---
 
 一行読む場合は`getLine :: IO String`を使います。

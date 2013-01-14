@@ -2,6 +2,7 @@
 title: オフラインで関数を検索する
 description: hoogleをinstallしてオフラインでも関数を検索できるようにします
 tags: tool
+date: 2013-01-10
 ---
 
 以下の手順でhoogleをinstallし、データを初期化します。

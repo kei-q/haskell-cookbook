@@ -2,6 +2,7 @@
 title: 文字列の長さを調べる
 description: lengthを使って文字列の長さを調べます
 tags: prelude, string
+date: 2013-01-07
 ---
 
 > module R20130107 where
