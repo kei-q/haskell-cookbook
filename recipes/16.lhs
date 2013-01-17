@@ -5,6 +5,8 @@ tags: list, set
 date: 2013-01-16
 ---
 
+fuga
+
 > module R20130116 where
 > import Data.List (nub, nubBy)
 > import Data.Function (on)
