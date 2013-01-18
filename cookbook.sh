@@ -11,4 +11,4 @@ subl recipes/$DATE.lhs --project haskell-cookbook.sublime-project
 ./preview.sh &
 
 # livereloadとhakyll previewを実行
-foreman start
+runghc ./site.hs preview
