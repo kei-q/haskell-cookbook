@@ -40,6 +40,7 @@ main = hakyllWith config $ do
                 >>= relativizeUrls
 
     publish recipesPattern (setExtension "html") $ pandocCompiler
+        >>= saveSnapshot "content"
         >>= slimTemplate "templates/recipe.slim" (postCtx tags)
         >>= defaultTemplate (postCtx tags)
         >>= relativizeUrls
@@ -50,6 +51,14 @@ main = hakyllWith config $ do
             >>= applyAsTemplate indexCtx
             >>= defaultTemplate (postCtx tags)
             >>= relativizeUrls
+
+    -- Render RSS feed
+    create ["rss.xml"] $ do
+        route idRoute
+        compile $ do
+            loadAllSnapshots "recipes/*" "content"
+                >>= return . take 10 . recentFirst'
+                >>= renderAtom (feedConfiguration "All recipes") feedCtx
 
 
 --------------------------------------------------------------------------------
@@ -68,6 +77,24 @@ postCtx tags = mconcat
     [ modificationTimeField "mtime" "%U"
     , dateField "date" "%B %e, %Y"
     , tagsField "tags" tags
+    , defaultContext
+    ]
+
+
+--------------------------------------------------------------------------------
+feedConfiguration :: String -> FeedConfiguration
+feedConfiguration title = FeedConfiguration
+    { feedTitle = title ++ "haskell-cookbook"
+    , feedDescription = "haskell-cookbook"
+    , feedAuthorName = "keqh"
+    , feedAuthorEmail = "keqh.keqh@gmail.com"
+    , feedRoot = "http://keqh.net/cookbook/"
+    }
+
+--------------------------------------------------------------------------------
+feedCtx :: Context String
+feedCtx = mconcat
+    [ bodyField "description"
     , defaultContext
     ]
 
