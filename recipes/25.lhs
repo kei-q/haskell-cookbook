@@ -1,7 +1,7 @@
 ---
 title: ランダムに値を生成する
 description: System.Randomを使って生成します
-tags: standard_library
+tags: standard_library, random
 date: 2013-01-25
 ---
 
