@@ -4,15 +4,12 @@ import           Data.Monoid
 import           Hakyll
 import           HakyllHelper
 
-import Data.List (sortBy, intercalate)
+import Data.List
 import Data.Ord (comparing)
-import qualified Data.Map as M
-import Control.Monad (msum)
-import           Data.Time.Format              (formatTime, parseTime)
-import           System.FilePath               (takeBaseName, takeFileName)
-import           System.Locale                 (TimeLocale, defaultTimeLocale)
+import           System.FilePath               (takeBaseName)
 import Numeric (readDec)
 
+import CookBookCompiler
 
 --------------------------------------------------------------------------------
 -- configuration
@@ -39,7 +36,7 @@ main = hakyllWith config $ do
                 >>= defaultTemplate defaultContext
                 >>= relativizeUrls
 
-    publish recipesPattern (setExtension "html") $ pandocCompiler
+    publish recipesPattern (setExtension "html") $ cookbookCompiler -- pandocCompiler
         >>= saveSnapshot "content"
         >>= slimTemplate "templates/recipe.slim" (postCtx tags)
         >>= defaultTemplate (postCtx tags)
@@ -116,4 +113,3 @@ recentFirst' = reverse . (sortBy $ comparing aux)
       where
         a = readDec s
     aux = readInt . takeBaseName . toFilePath . itemIdentifier
-
