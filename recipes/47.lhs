@@ -2,7 +2,7 @@
 title: 有理数を扱う
 description: Data.Ratioモジュールを使用します
 tags: base
-date: 2013-02-17
+date: 2013-02-16
 ---
 
 有理数を扱うには[Data.Ratio]をimportします。
