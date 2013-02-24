@@ -1,6 +1,6 @@
 ---
 title: Enumの自動導出について
-description: deriving (Enum)
+description: deriving (Enum)の紹介と、それによってできること
 tags: haskell2010
 date: 2013-02-24
 ---

@@ -23,7 +23,7 @@ main :: IO ()
 main = hakyllWith config $ do
     defaultRules
 
-    let recipesPattern = "recipes/*"
+    let recipesPattern = "recipes/**"
     tags <- buildTags recipesPattern (fromCapture "tags/*.html")
 
     tagsRules tags $ \tag pattern -> do
@@ -36,6 +36,17 @@ main = hakyllWith config $ do
                 >>= defaultTemplate defaultContext
                 >>= relativizeUrls
 
+    categories <- buildCategories recipesPattern (fromCapture "categories/*.html")
+    tagsRules categories $ \category pattern -> do
+        let title = "Category : " ++ category
+        route idRoute
+        compile $ do
+            list <- postList categories pattern recentFirst'
+            makeItem ""
+                >>= slimTemplate "templates/posts.slim" (tagsCtx title list)
+                >>= defaultTemplate defaultContext
+                >>= relativizeUrls
+
     publish recipesPattern (setExtension "html") $ cookbookCompiler -- pandocCompiler
         >>= saveSnapshot "content"
         >>= slimTemplate "templates/recipe.slim" (postCtx tags)
@@ -43,7 +54,10 @@ main = hakyllWith config $ do
         >>= relativizeUrls
 
     publish "index.html" idRoute $ do
-        let indexCtx = mconcat [ field "posts" (\_ -> postList tags recipesPattern recentFirst') , field "tags" (\_ -> renderTagList tags) , defaultContext ]
+        let indexCtx = mconcat [ field "posts" (\_ -> postList tags recipesPattern (take 10 . recentFirst'))
+                               , field "tags" (\_ -> renderTagList tags)
+                               , field "categories" (\_ -> renderTagList categories)
+                               , defaultContext ]
         getResourceBody
             >>= applyAsTemplate indexCtx
             >>= defaultTemplate (postCtx tags)
