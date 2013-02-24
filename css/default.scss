@@ -1,6 +1,13 @@
-* {
+body,
+h1,h2,h3,
+p,div,span,
+header,footer {
     margin: 0;
     padding: 0;
+}
+
+li {
+    line-height: 1.4em;
 }
 
 a {
