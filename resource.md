@@ -11,6 +11,16 @@ Haskell
 - [kzfmさんのlaskell](http://kzfm.github.com/laskell/index.html)
 - [PLEAC-Haskell](http://pleac.sourceforge.net/pleac_haskell/index.html)
 
+他言語(所持している書籍)
+----
+
+- [Amazon.co.jp： 改訂2版 Objective-C逆引きハンドブック: 林 晃: 本](http://www.amazon.co.jp/%E6%94%B9%E8%A8%822%E7%89%88-Objective-C%E9%80%86%E5%BC%95%E3%81%8D%E3%83%8F%E3%83%B3%E3%83%89%E3%83%96%E3%83%83%E3%82%AF-%E6%9E%97-%E6%99%83/dp/4863541058/ref=sr_1_15?s=books&ie=UTF8&qid=1361683707&sr=1-15)
+- [Amazon.co.jp： Ruby逆引きハンドブック: るびきち: 本](http://www.amazon.co.jp/Ruby%E9%80%86%E5%BC%95%E3%81%8D%E3%83%8F%E3%83%B3%E3%83%89%E3%83%96%E3%83%83%E3%82%AF-%E3%82%8B%E3%81%B3%E3%81%8D%E3%81%A1/dp/4863540221/ref=sr_1_1?s=books&ie=UTF8&qid=1361683737&sr=1-1)
+- [Amazon.co.jp： Scala逆引きレシピ (PROGRAMMER’S RECiPE): 竹添 直樹, 島本 多可子: 本](http://www.amazon.co.jp/Scala%E9%80%86%E5%BC%95%E3%81%8D%E3%83%AC%E3%82%B7%E3%83%94-PROGRAMMER%E2%80%99S-RECiPE-%E7%AB%B9%E6%B7%BB-%E7%9B%B4%E6%A8%B9/dp/4798125415/ref=sr_1_5?s=books&ie=UTF8&qid=1361683737&sr=1-5)
+- [Amazon.co.jp： Rails3レシピブック 190の技: 高橋 征義, 松田 明, 諸橋 恭介: 本](http://www.amazon.co.jp/Rails3%E3%83%AC%E3%82%B7%E3%83%94%E3%83%96%E3%83%83%E3%82%AF-190%E3%81%AE%E6%8A%80-%E9%AB%98%E6%A9%8B-%E5%BE%81%E7%BE%A9/dp/4797363827/ref=pd_sim_b_4)
+
+
+
 参考資料（日本語）
 ====
 
@@ -75,3 +85,9 @@ SNS
 - [The International Conference on Functional Programming](http://www.icfpconference.org/)
 - [The Haskell Symposium](http://www.haskell.org/haskell-symposium/)
 - [CUFP | Commercial Users of Functional Programming](http://cufp.org/)
+
+逆引き本（未所持）
+====
+
+- [Amazon.co.jp： Ruby 逆引きレシピ すぐに美味しいサンプル&テクニック 232 (PROGRAMMER’S RECIPE): 島田 浩二, 設樂 洋爾, 村田 賢太, 前田 智樹, 谷口 文威: 本](http://www.amazon.co.jp/%E9%80%86%E5%BC%95%E3%81%8D%E3%83%AC%E3%82%B7%E3%83%94-%E3%81%99%E3%81%90%E3%81%AB%E7%BE%8E%E5%91%B3%E3%81%97%E3%81%84%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB-%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-PROGRAMMER%E2%80%99S-RECIPE/dp/4798119881/ref=sr_1_2?s=books&ie=UTF8&qid=1361683737&sr=1-2)
+- [O'Reilly Japan - Books :: 発行書籍一覧](http://www.oreilly.co.jp/catalog/) ('クックブック'でfilter)
