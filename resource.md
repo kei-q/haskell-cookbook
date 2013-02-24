@@ -38,6 +38,8 @@ Haskell
 - [Haskell - HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
     - [Tutorials - HaskellWiki](http://www.haskell.org/haskellwiki/Tutorials)
     - [How to write a Haskell program - HaskellWiki](http://www.haskell.org/haskellwiki/How_to_write_a_Haskell_program)
+    - [Keywords - HaskellWiki](http://www.haskell.org/haskellwiki/Keywords)
+    - [H-99: Ninety-Nine Haskell Problems - HaskellWiki](http://www.haskell.org/haskellwiki/H-99:_Ninety-Nine_Haskell_Problems)
     - [Books - HaskellWiki](http://www.haskell.org/haskellwiki/Books)
     - [Research papers/Functional pearls - HaskellWiki](http://www.haskell.org/haskellwiki/Research_papers/Functional_pearls)
 - [Haskell - wikibooks](http://en.wikibooks.org/wiki/Haskell)
@@ -47,6 +49,7 @@ Haskell
 - [Hoogle](http://www.haskell.org/hoogle/)
 - [Hayoo! - Haskell API Search](http://holumbus.fh-wedel.de/hayoo/hayoo.html)
 - [HackageDB: introduction](http://hackage.haskell.org/packages/hackage.html)
+- [24 days of hackage](http://ocharles.org.uk/blog/)
 
 SNS
 ====
