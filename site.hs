@@ -63,6 +63,11 @@ main = hakyllWith config $ do
             >>= defaultTemplate (postCtx tags)
             >>= relativizeUrls
 
+    publish "resource.md" (setExtension "html") $
+        pandocCompiler
+            >>= defaultTemplate defaultContext
+            >>= relativizeUrls
+
     -- Render RSS feed
     create ["rss.xml"] $ do
         route idRoute
