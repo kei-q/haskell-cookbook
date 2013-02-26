@@ -50,6 +50,7 @@ Haskell
 - [Hayoo! - Haskell API Search](http://holumbus.fh-wedel.de/hayoo/hayoo.html)
 - [HackageDB: introduction](http://hackage.haskell.org/packages/hackage.html)
 - [24 days of hackage](http://ocharles.org.uk/blog/)
+- [Hackage dependency monitor](http://packdeps.haskellers.com/)
 
 SNS
 ====
