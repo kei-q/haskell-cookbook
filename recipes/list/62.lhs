@@ -2,7 +2,7 @@
 title: リスト内の要素を探す
 description: elem, filterなどのData.Listにある関数について
 tags: list
-date: 2013-03-02
+date: 2013-03-03
 ---
 
 > import Data.List
