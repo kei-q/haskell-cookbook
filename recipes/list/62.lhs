@@ -1,6 +1,6 @@
 ---
 title: リスト内の要素を探す
-description: リストを構築する基本的な演算子について
+description: elem, filterなどのData.Listにある関数について
 tags: list
 date: 2013-03-02
 ---
