@@ -1,31 +1,26 @@
 ---
-title: リストから部分列・順列を生成する
-description: subsequences, permutationsの使い方
+title: リストのリストを平にする
+description: concat, concatMapの使い方
 tags: list
-date: 2013-04-03
+date: 2013-04-04
 ---
 
-今回使用する関数は以下のmoduleのimportが必要です。
+> list :: [[Int]]
+> list = [[1,2,3],[4,5,6],[7,8,9]]
 
-> import Data.List
-
-確認用データは以下を使用します。
-
-> list :: [Int]
-> list = [1,2,3]
-
-部分列・順列の生成にはそれぞれ以下を使用します。
-
-- `Data.List.subsequences`{.hoogle}
-- `Data.List.permutations`{.hoogle}
-
+リストのリストを平にするには`Data.List.concat`{.hoogle}を使用します。
 使い方は以下のとおりです。
 
 ```bash
-ghci> subsequences list
-[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
-
-ghci> permutations list
-[[1,2,3],[2,1,3],[3,2,1],[2,3,1],[3,1,2],[1,3,2]]
-
+ghci> concat list
+[1,2,3,4,5,6,7,8,9]
 ```
+
+`a -> [b]`となる関数とリストを`map`を適用し、その後`concat`することはよくあるため、
+`Data.List.concatMap`{.hoogle}という関数が用意されています。
+
+```bash
+ghci> concatMap (\x -> [x,-x]) [1,2,3]
+[1,-1,2,-2,3,-3]
+```
+
