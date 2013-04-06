@@ -1,40 +1,26 @@
 ---
-title: リストが（すべての|いずれかの）条件に一致するか調べる
-description: any, all, and, orの使い方
+title: リストのリストを平にする
+description: concat, concatMapの使い方
 tags: list
-date: 2013-04-05
+date: 2013-04-04
 ---
 
-リストの要素が全て条件を満たすか確認したいときは`all`、いずれかの要素が条件を満たすか確認したいときは`any`を使います。それぞれ一つ目の引数に条件を、２つ目にリストを指定します。
+> list :: [[Int]]
+> list = [[1,2,3],[4,5,6],[7,8,9]]
 
-- `Data.List.all`{.hoogle}
-- `Data.List.any`{.hoogle}
-
-```bash
-ghci> all even [1..9]
-False
-ghci> all even [2,4..10]
-True
-
-ghci> any even [1..9]
-True
-ghci> any even [2,4..10]
-True
-```
-
-引数が`[Bool]`であるときは、`and`と`or`が使えます。
-
-- `Data.List.and`{.hoogle}
-- `Data.List.or`{.hoogle}
+リストのリストを平にするには`Data.List.concat`{.hoogle}を使用します。
+使い方は以下のとおりです。
 
 ```bash
-ghci> and [True,True,True]
-True
-ghci> and [True,True,False]
-False
-
-ghci> or [True,True,True]
-True
-ghci> or [True,True,False]
-True
+ghci> concat list
+[1,2,3,4,5,6,7,8,9]
 ```
+
+`a -> [b]`となる関数とリストを`map`を適用し、その後`concat`することはよくあるため、
+`Data.List.concatMap`{.hoogle}という関数が用意されています。
+
+```bash
+ghci> concatMap (\x -> [x,-x]) [1,2,3]
+[1,-1,2,-2,3,-3]
+```
+
